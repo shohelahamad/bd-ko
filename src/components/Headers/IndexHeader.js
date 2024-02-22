@@ -2,7 +2,7 @@
 import React from "react";
 
 // reactstrap components
-import { Container } from "reactstrap";
+import { Container, Button } from "reactstrap";
 
 // core components
 
@@ -20,7 +20,7 @@ function IndexHeader() {
         <div className="content-center">
           <Container>
             <div className="title-brand">
-              <h1 className="presentation-title">Paper Kit React</h1>
+              <h1 className="presentation-title">Bangladeshi Koblenzer</h1>
               <div className="fog-low">
                 <img alt="..." src={require("assets/img/fog-low.png")} />
               </div>
@@ -29,10 +29,18 @@ function IndexHeader() {
               </div>
             </div>
             <h2 className="presentation-subtitle text-center">
-              Make your mark with a Free Bootstrap 4 (Reactstrap) UI Kit!
+              Bridging Cultures, Embracing Unity: Bangladeshi Spirit in Koblenz City!
             </h2>
+
           </Container>
         </div>
+
+        <div
+          className="moving-clouds"
+          style={{
+            backgroundImage: "url(" + require("assets/img/clouds.png") + ")",
+          }}
+        />
         <div
           className="moving-clouds"
           style={{
@@ -40,18 +48,15 @@ function IndexHeader() {
           }}
         />
         <h6 className="category category-absolute">
-          Designed and coded by{" "}
-          <a
-            href="https://www.creative-tim.com?ref=pkr-index-page"
-            target="_blank"
-          >
-            <img
-              alt="..."
-              className="creative-tim-logo"
-              src={require("assets/img/creative-tim-white-slim2.png")}
-            />
-          </a>
+        <Button
+          className="btn-round btn-lg"
+          color="danger"
+          href="/image-gallery"
+        >
+          <i className="nc-icon nc-image"></i> Image Gallery
+        </Button>
         </h6>
+
       </div>
     </>
   );
