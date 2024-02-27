@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/koblenzer.app/static/css/main.9760a3f4.css",
-    "main.js": "/koblenzer.app/static/js/main.b9c82822.js",
+    "main.css": "/koblenzer.app/static/css/main.bb6b263a.css",
+    "main.js": "/koblenzer.app/static/js/main.35d29ee1.js",
     "static/media/antoine-barres.jpg": "/koblenzer.app/static/media/antoine-barres.bdc67c86d89deb66fc8d.jpg",
     "static/media/clouds.png": "/koblenzer.app/static/media/clouds.3c700c1313cc1cd3d3c5.png",
     "static/media/login-image.jpg": "/koblenzer.app/static/media/login-image.21e8ba3f9dca3c346851.jpg",
@@ -28,7 +28,7 @@
     "index.html": "/koblenzer.app/index.html"
   },
   "entrypoints": [
-    "static/css/main.9760a3f4.css",
-    "static/js/main.b9c82822.js"
+    "static/css/main.bb6b263a.css",
+    "static/js/main.35d29ee1.js"
   ]
 }
