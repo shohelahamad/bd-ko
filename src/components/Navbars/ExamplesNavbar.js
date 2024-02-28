@@ -55,12 +55,11 @@ function ExamplesNavbar() {
         <div className="navbar-translate">
           <NavbarBrand
             data-placement="bottom"
-            to="/index"
-            target="_blank"
+            to="/"
             title="Coded by Creative Tim"
             tag={Link}
           >
-            Paper Kit 2
+            Bangladeshi Koblenzer
           </NavbarBrand>
           <button
             aria-expanded={navbarCollapse}
@@ -80,73 +79,38 @@ function ExamplesNavbar() {
           isOpen={navbarCollapse}
         >
           <Nav navbar>
-            <NavItem>
-              <NavLink to="/index" tag={Link}>
-                <i className="nc-icon nc-layout-11" /> Components
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                href="https://demos.creative-tim.com/paper-kit-react/#/documentation?ref=pkr-examples-navbar"
-                target="_blank"
-              >
-                <i className="nc-icon nc-book-bookmark" /> Documentation
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                data-placement="bottom"
-                href="https://twitter.com/CreativeTim?ref=creativetim"
-                target="_blank"
-                title="Follow us on Twitter"
-              >
-                <i className="fa fa-twitter" />
-                <p className="d-lg-none">Twitter</p>
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                data-placement="bottom"
-                href="https://www.facebook.com/CreativeTim?ref=creativetim"
-                target="_blank"
-                title="Like us on Facebook"
-              >
-                <i className="fa fa-facebook-square" />
-                <p className="d-lg-none">Facebook</p>
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                data-placement="bottom"
-                href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
-                target="_blank"
-                title="Follow us on Instagram"
-              >
-                <i className="fa fa-instagram" />
-                <p className="d-lg-none">Instagram</p>
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                data-placement="bottom"
-                href="https://www.github.com/CreativeTimOfficial?ref=creativetim"
-                target="_blank"
-                title="Star on GitHub"
-              >
-                <i className="fa fa-github" />
-                <p className="d-lg-none">GitHub</p>
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <Button
-                className="btn-round"
-                color="danger"
-                href="https://www.creative-tim.com/product/paper-kit-pro-react?ref=pkr-examples-navbar"
-                target="_blank"
-              >
-                <i className="nc-icon nc-spaceship"></i> Upgrade to Pro
-              </Button>
-            </NavItem>
+          <NavItem>
+            <NavLink
+              data-placement="bottom"
+              href="https://www.facebook.com/groups/BSFKG/"
+              target="_blank"
+              title="Like us on Facebook"
+            >
+              <i className="fa fa-facebook-square" />Our Facebook page
+              <p className="d-lg-none">Facebook</p>
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink
+              data-placement="bottom"
+              href="https://chat.whatsapp.com/JmDUH3LmUsdEhjyo59Bi4d"
+              target="_blank"
+              title="Star on GitHub"
+            >
+              <i className="fa fa-2x fa-whatsapp" /> Our WhatsApp group
+              <p className="d-lg-none">WhatsApp</p>
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <Button
+              className="btn-round"
+              color="danger"
+              href="https://forms.gle/VkWC1xHn1eHEQFT48"
+              target="_blank"
+            >
+              <i className="nc-icon nc-spaceship"></i> Register for Eid Event 2024
+            </Button>
+          </NavItem>
           </Nav>
         </Collapse>
       </Container>

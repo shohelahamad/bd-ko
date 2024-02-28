@@ -76,7 +76,7 @@ function IndexNavbar() {
             <NavItem>
               <NavLink
                 data-placement="bottom"
-                href="https://www.github.com/CreativeTimOfficial/paper-kit-react?ref=creativetim"
+                href="https://chat.whatsapp.com/JmDUH3LmUsdEhjyo59Bi4d"
                 target="_blank"
                 title="Star on GitHub"
               >
@@ -88,7 +88,7 @@ function IndexNavbar() {
               <Button
                 className="btn-round"
                 color="danger"
-                href="https://www.creative-tim.com/product/paper-kit-pro-react?ref=pkr-index-navbar"
+                href="https://forms.gle/VkWC1xHn1eHEQFT48"
                 target="_blank"
               >
                 <i className="nc-icon nc-spaceship"></i> Register for Eid Event 2024
