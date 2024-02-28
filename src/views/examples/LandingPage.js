@@ -1,4 +1,5 @@
 import React from "react";
+import SectionCarousel from "views/index-sections/SectionCarousel.js";
 
 // reactstrap components
 import {
@@ -23,6 +24,55 @@ import LandingPageHeader from "components/Headers/LandingPageHeader.js";
 import DemoFooter from "components/Footers/DemoFooter.js";
 
 function LandingPage() {
+  const items_2023 = [];
+  for (let i = 1; i <= 12; i++) {
+    items_2023.push({
+      src: require(`assets/img/2023/${i}.jpg`),
+      altText: "",
+      caption: "",
+    });
+  }
+  const items_2022 = [];
+  for (let i = 1; i <= 5; i++) {
+    items_2022.push({
+      src: require(`assets/img/2022/${i}.JPG`),
+      altText: "",
+      caption: "",
+    });
+  }
+  const items_2021 = [];
+  for (let i = 1; i <= 2; i++) {
+    items_2021.push({
+      src: require(`assets/img/2021/${i}.jpg`),
+      altText: "",
+      caption: "",
+    });
+  }
+  const items_2019 = [];
+  for (let i = 1; i <= 10; i++) {
+    items_2019.push({
+      src: require(`assets/img/2019/${i}.JPG`),
+      altText: "",
+      caption: "",
+    });
+  }
+  const items_2018 = [];
+  for (let i = 1; i <= 7; i++) {
+    items_2018.push({
+      src: require(`assets/img/2018/${i}.jpg`),
+      altText: "",
+      caption: "",
+    });
+  }
+  const items_2017 = [];
+  for (let i = 1; i <= 3; i++) {
+    items_2017.push({
+      src: require(`assets/img/2017/${i}.jpg`),
+      altText: "",
+      caption: "",
+    });
+  }
+
   document.documentElement.classList.remove("nav-open");
   React.useEffect(() => {
     document.body.classList.add("profile-page");
@@ -35,311 +85,73 @@ function LandingPage() {
       <ExamplesNavbar />
       <LandingPageHeader />
       <div className="main">
-        <div className="section text-center">
+        <div className="section text-center" id="part-1">
           <Container>
             <Row>
-              <Col className="ml-auto mr-auto" md="8">
-                <h2 className="title">Let's talk product</h2>
-                <h5 className="description">
-                  This is the paragraph where you can write more details about
-                  your product. Keep you user engaged by providing meaningful
-                  information. Remember that by this time, the user is curious,
-                  otherwise he wouldn't scroll to get here. Add a button if you
-                  want the user to see more.
-                </h5>
-                <br />
+              <Col className="ml-auto mr-auto" md="12">
+              <h2 className="title">Image gallery 2023</h2>
+                <SectionCarousel items={items_2023}/>
                 <Button
-                  className="btn-round"
-                  color="info"
-                  href="#pablo"
-                  onClick={(e) => e.preventDefault()}
+                  className="btn-outline-danger"
+                  color="default"
+                  href="https://drive.google.com/drive/folders/1bMXlRQVbzhIKtde1JTgwvwEGAzd_HCOa"
+                  target="_blank"
                 >
-                  See Details
+                <i className="nc-icon nc-album-2" />
+                  <span> More photos of 2023 on Google Drive</span>
                 </Button>
               </Col>
             </Row>
             <br />
             <br />
             <Row>
-              <Col md="3">
-                <div className="info">
-                  <div className="icon icon-info">
-                    <i className="nc-icon nc-album-2" />
-                  </div>
-                  <div className="description">
-                    <h4 className="info-title">Beautiful Gallery</h4>
-                    <p className="description">
-                      Spend your time generating new ideas. You don't have to
-                      think of implementing.
-                    </p>
-                    <Button className="btn-link" color="info" href="#pablo">
-                      See more
-                    </Button>
-                  </div>
-                </div>
-              </Col>
-              <Col md="3">
-                <div className="info">
-                  <div className="icon icon-info">
-                    <i className="nc-icon nc-bulb-63" />
-                  </div>
-                  <div className="description">
-                    <h4 className="info-title">New Ideas</h4>
-                    <p>
-                      Larger, yet dramatically thinner. More powerful, but
-                      remarkably power efficient.
-                    </p>
-                    <Button className="btn-link" color="info" href="#pablo">
-                      See more
-                    </Button>
-                  </div>
-                </div>
-              </Col>
-              <Col md="3">
-                <div className="info">
-                  <div className="icon icon-info">
-                    <i className="nc-icon nc-chart-bar-32" />
-                  </div>
-                  <div className="description">
-                    <h4 className="info-title">Statistics</h4>
-                    <p>
-                      Choose from a veriety of many colors resembling sugar
-                      paper pastels.
-                    </p>
-                    <Button className="btn-link" color="info" href="#pablo">
-                      See more
-                    </Button>
-                  </div>
-                </div>
-              </Col>
-              <Col md="3">
-                <div className="info">
-                  <div className="icon icon-info">
-                    <i className="nc-icon nc-sun-fog-29" />
-                  </div>
-                  <div className="description">
-                    <h4 className="info-title">Delightful design</h4>
-                    <p>
-                      Find unique and handmade delightful designs related items
-                      directly from our sellers.
-                    </p>
-                    <Button className="btn-link" color="info" href="#pablo">
-                      See more
-                    </Button>
-                  </div>
-                </div>
+              <Col className="ml-auto mr-auto" md="12">
+              <h2 className="title">Image gallery 2022</h2>
+                <SectionCarousel items={items_2022}/>
               </Col>
             </Row>
-          </Container>
-        </div>
-        <div className="section section-dark text-center">
-          <Container>
-            <h2 className="title">Let's talk about us</h2>
+            <br />
+            <br />
             <Row>
-              <Col md="4">
-                <Card className="card-profile card-plain">
-                  <div className="card-avatar">
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <img
-                        alt="..."
-                        src={require("assets/img/faces/clem-onojeghuo-3.jpg")}
-                      />
-                    </a>
-                  </div>
-                  <CardBody>
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <div className="author">
-                        <CardTitle tag="h4">Henry Ford</CardTitle>
-                        <h6 className="card-category">Product Manager</h6>
-                      </div>
-                    </a>
-                    <p className="card-description text-center">
-                      Teamwork is so important that it is virtually impossible
-                      for you to reach the heights of your capabilities or make
-                      the money that you want without becoming very good at it.
-                    </p>
-                  </CardBody>
-                  <CardFooter className="text-center">
-                    <Button
-                      className="btn-just-icon btn-neutral"
-                      color="link"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-twitter" />
-                    </Button>
-                    <Button
-                      className="btn-just-icon btn-neutral ml-1"
-                      color="link"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-google-plus" />
-                    </Button>
-                    <Button
-                      className="btn-just-icon btn-neutral ml-1"
-                      color="link"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-linkedin" />
-                    </Button>
-                  </CardFooter>
-                </Card>
-              </Col>
-              <Col md="4">
-                <Card className="card-profile card-plain">
-                  <div className="card-avatar">
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <img
-                        alt="..."
-                        src={require("assets/img/faces/joe-gardner-2.jpg")}
-                      />
-                    </a>
-                  </div>
-                  <CardBody>
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <div className="author">
-                        <CardTitle tag="h4">Sophie West</CardTitle>
-                        <h6 className="card-category">Designer</h6>
-                      </div>
-                    </a>
-                    <p className="card-description text-center">
-                      A group becomes a team when each member is sure enough of
-                      himself and his contribution to praise the skill of the
-                      others. No one can whistle a symphony. It takes an
-                      orchestra to play it.
-                    </p>
-                  </CardBody>
-                  <CardFooter className="text-center">
-                    <Button
-                      className="btn-just-icon btn-neutral"
-                      color="link"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-twitter" />
-                    </Button>
-                    <Button
-                      className="btn-just-icon btn-neutral ml-1"
-                      color="link"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-google-plus" />
-                    </Button>
-                    <Button
-                      className="btn-just-icon btn-neutral ml-1"
-                      color="link"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-linkedin" />
-                    </Button>
-                  </CardFooter>
-                </Card>
-              </Col>
-              <Col md="4">
-                <Card className="card-profile card-plain">
-                  <div className="card-avatar">
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <img
-                        alt="..."
-                        src={require("assets/img/faces/erik-lucatero-2.jpg")}
-                      />
-                    </a>
-                  </div>
-                  <CardBody>
-                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
-                      <div className="author">
-                        <CardTitle tag="h4">Robert Orben</CardTitle>
-                        <h6 className="card-category">Developer</h6>
-                      </div>
-                    </a>
-                    <p className="card-description text-center">
-                      The strength of the team is each individual member. The
-                      strength of each member is the team. If you can laugh
-                      together, you can work together, silence isn’t golden,
-                      it’s deadly.
-                    </p>
-                  </CardBody>
-                  <CardFooter className="text-center">
-                    <Button
-                      className="btn-just-icon btn-neutral"
-                      color="link"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-twitter" />
-                    </Button>
-                    <Button
-                      className="btn-just-icon btn-neutral ml-1"
-                      color="link"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-google-plus" />
-                    </Button>
-                    <Button
-                      className="btn-just-icon btn-neutral ml-1"
-                      color="link"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-linkedin" />
-                    </Button>
-                  </CardFooter>
-                </Card>
+              <Col className="ml-auto mr-auto" md="12">
+              <h2 className="title">Image gallery 2021</h2>
+                <SectionCarousel items={items_2021}/>
               </Col>
             </Row>
-          </Container>
-        </div>
-        <div className="section landing-section">
-          <Container>
+            <br />
+            <br />
             <Row>
-              <Col className="ml-auto mr-auto" md="8">
-                <h2 className="text-center">Keep in touch?</h2>
-                <Form className="contact-form">
-                  <Row>
-                    <Col md="6">
-                      <label>Name</label>
-                      <InputGroup>
-                        <InputGroupAddon addonType="prepend">
-                          <InputGroupText>
-                            <i className="nc-icon nc-single-02" />
-                          </InputGroupText>
-                        </InputGroupAddon>
-                        <Input placeholder="Name" type="text" />
-                      </InputGroup>
-                    </Col>
-                    <Col md="6">
-                      <label>Email</label>
-                      <InputGroup>
-                        <InputGroupAddon addonType="prepend">
-                          <InputGroupText>
-                            <i className="nc-icon nc-email-85" />
-                          </InputGroupText>
-                        </InputGroupAddon>
-                        <Input placeholder="Email" type="text" />
-                      </InputGroup>
-                    </Col>
-                  </Row>
-                  <label>Message</label>
-                  <Input
-                    placeholder="Tell us your thoughts and feelings..."
-                    type="textarea"
-                    rows="4"
-                  />
-                  <Row>
-                    <Col className="ml-auto mr-auto" md="4">
-                      <Button className="btn-fill" color="danger" size="lg">
-                        Send Message
-                      </Button>
-                    </Col>
-                  </Row>
-                </Form>
+              <Col className="ml-auto mr-auto" md="12">
+              <h2 className="title">Image gallery 2019</h2>
+                <SectionCarousel items={items_2019}/>
+                <Button
+                  className="btn-outline-danger"
+                  color="default"
+                  href="https://drive.google.com/drive/folders/1o2qrERvJQ61Vn2vmUEQMWpVQkSOyHqZU"
+                  target="_blank"
+                >
+                <i className="nc-icon nc-album-2" />
+                  <span> More photos of 2019 on Google Drive</span>
+                </Button>
               </Col>
             </Row>
+            <br />
+            <br />
+            <Row>
+              <Col className="ml-auto mr-auto" md="12">
+              <h2 className="title">Image gallery 2018</h2>
+                <SectionCarousel items={items_2018}/>
+              </Col>
+            </Row>
+            <br />
+            <br />
+            <Row>
+              <Col className="ml-auto mr-auto" md="12">
+              <h2 className="title">Image gallery 2017</h2>
+                <SectionCarousel items={items_2017}/>
+              </Col>
+            </Row>
+
           </Container>
         </div>
       </div>

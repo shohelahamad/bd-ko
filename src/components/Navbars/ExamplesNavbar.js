@@ -82,23 +82,21 @@ function ExamplesNavbar() {
           <NavItem>
             <NavLink
               data-placement="bottom"
-              href="https://www.facebook.com/groups/BSFKG/"
-              target="_blank"
-              title="Like us on Facebook"
-            >
-              <i className="fa fa-facebook-square" />Our Facebook page
-              <p className="d-lg-none">Facebook</p>
-            </NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink
-              data-placement="bottom"
               href="https://chat.whatsapp.com/JmDUH3LmUsdEhjyo59Bi4d"
               target="_blank"
               title="Star on GitHub"
             >
               <i className="fa fa-2x fa-whatsapp" /> Our WhatsApp group
-              <p className="d-lg-none">WhatsApp</p>
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink
+              data-placement="bottom"
+              href="https://www.facebook.com/groups/BSFKG/"
+              target="_blank"
+              title="Like us on Facebook"
+            >
+              <i className="fa fa-facebook-square" />Our Facebook page
             </NavLink>
           </NavItem>
           <NavItem>
